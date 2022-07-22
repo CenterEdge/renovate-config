@@ -1,0 +1,12 @@
+{
+    "packageRules": [
+        {
+            "enabled": true,   
+            "groupName": "npm Minor Packages",
+            "matchUpdateTypes": ["patch", "minor"],
+            "matchManagers": [ "npm" ],
+            "stabilityDays": 3
+        }
+    ],
+    "rangeStrategy": "bump"
+}

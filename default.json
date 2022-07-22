@@ -6,6 +6,7 @@
     "branchPrefixOld": "renovate-",
     "dependencyDashboard": true,
     "ignoreUnstable": true,
+    "ignorePaths": [],
     "packageRules": [
         {
             "matchManagers": ["dockerfile", "docker-compose", "github-actions", "kustomize"],

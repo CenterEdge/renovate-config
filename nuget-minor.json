@@ -1,0 +1,11 @@
+{
+    "packageRules": [
+        {            
+            "enabled": true,
+            "groupName": "Nuget Minor Packages",
+            "matchUpdateTypes": ["patch", "minor"],
+            "matchManagers": [ "nuget" ],
+            "stabilityDays": 3
+        }
+    ]
+}

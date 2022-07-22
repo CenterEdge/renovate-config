@@ -1,10 +1,10 @@
 {
-    "extends": [
-      "config:base"
-    ],
     "branchPrefix": "renovate-",
     "branchPrefixOld": "renovate-",
     "dependencyDashboard": true,
+    "extends": [
+      "config:base"
+    ],    
     "ignorePaths": [],
     "ignoreUnstable": true,
     "packageRules": [

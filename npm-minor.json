@@ -1,4 +1,5 @@
 {
+    "description": "This preset is used to combine update patch and minor package updates into one pull request",
     "packageRules": [
         {
             "enabled": true,   

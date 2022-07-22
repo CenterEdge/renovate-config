@@ -5,6 +5,7 @@ Renovate is a dependency update tool https://github.com/renovatebot/renovate
 - Configuration documention: https://docs.renovatebot.com/configuration-options
 - Presets documentation: https://docs.renovatebot.com/config-presets/
 - Run logs: https://app.renovatebot.com/dashboard#github/CenterEdge/
+- See any `renovate.json` in our repos for how to add a new Renovate configuration to a repo
 
 
 ----

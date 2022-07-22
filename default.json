@@ -12,7 +12,6 @@
             "enabled": false      
         }         
     ],
-    "prCreation": "not-pending",
     "prBodyNotes": "@centeredge engineers  \r\n\r\n - If a package is responsible for a regression remove it from this auto generated PR then make a Jira ticket to only update that package \r\n - If any single packages aren't passing the [stabilityDays](https://docs.renovatebot.com/configuration-options/#stabilitydays) check then the entire PR containing other packages will not be made (ideally just that one package would be excluded, but this is a limitation of the current system). Search \"stability\" in the [Renovate logs](https://app.renovatebot.com/dashboard#github/CenterEdge/TempPackageManagerConcept) to find which package is being blocked",
     "schedule": ["every 1 hours every weekday"],
     "timezone": "America/New_York"

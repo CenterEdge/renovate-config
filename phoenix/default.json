@@ -13,7 +13,14 @@
             "enabled": false      
         }         
     ],
-    "prBodyNotes": "@centeredge engineers  \r\n\r\n - You need to create a Jira ticket for each PR, example ticket to copy from: https://centeredge.atlassian.net/browse/PHNX-9277 (TODO JIRA) \r\n - If a package is responsible for a regression remove it from this auto generated PR then make a Jira ticket in https://centeredge.atlassian.net/browse/PHNX-9276 to only update that package \r\n - If any single packages aren't passing the [stabilityDays](https://docs.renovatebot.com/configuration-options/#stabilitydays) check then the entire PR containing other packages will not be made (ideally just that one package would be excluded, but this is a limitation of the current system). Search \"stability\" in the [Renovate logs](https://app.renovatebot.com/dashboard#github/CenterEdge/TempPackageManagerConcept) to find which package is being blocked",
+    "prBodyNotes": [
+        "- Each PR needs a jira ticket, example ticket to copy from: https://centeredge.atlassian.net/browse/PHNX-9277 (TODO JIRA)",
+        "- If a package is responsible for a regression (or for any reason a package should be excluded from a PR): ",
+        "1. Add a line to the renovate config to exclude problematic package versions, such as: ```\"packageRules\": [{\"matchPackageNames\": [\"Google.Protobuf\"],\"allowedVersions\": \"<=3.11.2\"}]```",
+        "2. Do not simply remove the package in this PR, see step 1. Because, if the package is manually removed from the PR without doing step 1 then when Renovate executes on this repo, then the package will automatically be added back by Renovate",
+        "3. Manualy remove the package from this auto generated PR then make a Jira ticket in https://centeredge.atlassian.net/browse/PHNX-9276 to only update that package",
+        "- If any single packages aren't passing the [stabilityDays](https://docs.renovatebot.com/configuration-options/#stabilitydays) check then the entire PR containing other packages will not be made (ideally just that one package would be excluded, but this is a limitation of the current system). Search \"stability\" in the [Renovate logs](https://app.renovatebot.com/dashboard#github/CenterEdge/TempPackageManagerConcept) to find which package is being blocked",
+    ],
     "schedule": ["every 1 hours every weekday"],
     "timezone": "America/New_York"
 }

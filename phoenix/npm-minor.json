@@ -3,7 +3,7 @@
     "packageRules": [
         {
             "enabled": true,   
-            "groupName": "npm Minor Packages",
+            "groupName": "npm Minor Packages (TODO JIRA)",
             "matchUpdateTypes": ["patch", "minor"],
             "matchManagers": [ "npm" ],
             "stabilityDays": 3

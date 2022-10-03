@@ -1,0 +1,53 @@
+{
+    "description": [
+        "This preset is used to update private CenterEdge packages from our github package repository",
+        "Include any packages in the packageRules.matchPackageNames list to trigger Renovate to make pull requests for those packages",
+        "The tokens are generated from https://app.renovatebot.com/encrypt",
+        "The tokens depend on an authorized github packages token, ghp, to be valid. If that github token expires then the",
+            "Renovate updates to private packages will break",
+            "See https://centeredge.atlassian.net/wiki/spaces/DO/pages/2969337857/GitHub+Packages+Setup for ghp setup",
+        "See https://docs.renovatebot.com/getting-started/private-packages/ for more information about private package configuration"
+    ],
+    "hostRules": [
+        {
+            "encrypted": {
+                "token": "wcFMA/xDdHCJBTolAQ/+JSp5hnVsfmqLWCzZMHAsVXvq6wkn2UH8PjzcLP1/zuWc42GjiLhHvIsJe1SODHca1BNgwMaj2u2gTGgKkGo2oDbt2/KQowUAHup1VeLxaIBc0mnrG5N3xZEFV4KC5fCSGO+8UwBB5J/odMIzBG9366P36XKlpvENSEM3R1YyXkkxi3a71vNQGn1IJFTNuKXhr0zZx0852QVGDILVXDwQewgI+maUtMwJ0zrC4JZE16TsOg3UOm5NmvpGtxwit0JEonAxiALj4vJ7hxMBQzd0KObLoafBD9vd8ptq+MVqISzaRSS1JKIn+BCmoRo9kmtZR5yG4DIaacth0Cd+odqukmrV8T0TcE8SSWmNbyFL/weJ8o1dp0xE24AstNWWaQvU407H/UikePfqoEFhazf/bdN7glG691ymXsnk2Xw4npwxH5Pfs37h5ErFJ7iI3MSJzm6ZnJvT8MoWOGpfxJxx+TjqDKM0wYMoytHdHNdkFbTEnqo+Lbpa8k9L6JAMog+SuJiFKbea+gdhJ6PRf0mbTF7S+jea0Bg5yv3oB0Fwj0S5Y/3r4kCqX8x3Os20FIh7YaJeMLpFLkvc8u6u0kueWTFf2pxNpHwCeX0fl0m4xBPAm0LI8LoFHBBNaD02IRy0GwRBMXt3QkBZY4g7TTGjH10BOdh26RBmCHHA48z8Cg/SeQGSDVI6fKXr8s/0jd4gOT80Loz7HLdf6C/aq4E35qsUjO89AoWdEG5iryqnSop5VO7XQAyb84V+jPAcLi0sZ0AbeNMYA4QMUnXJPU/DLtv2y5hM8t4/p0eGFD186YUMMrbknS6OETLqtEDUvPdKhCBLT050SQVemVI"
+            },
+            "hostType": "npm",
+            "matchHost": "https://npm.pkg.github.com/"
+        },
+        {
+            "encrypted": {
+                "token": "wcFMA/xDdHCJBTolAQ/+JSp5hnVsfmqLWCzZMHAsVXvq6wkn2UH8PjzcLP1/zuWc42GjiLhHvIsJe1SODHca1BNgwMaj2u2gTGgKkGo2oDbt2/KQowUAHup1VeLxaIBc0mnrG5N3xZEFV4KC5fCSGO+8UwBB5J/odMIzBG9366P36XKlpvENSEM3R1YyXkkxi3a71vNQGn1IJFTNuKXhr0zZx0852QVGDILVXDwQewgI+maUtMwJ0zrC4JZE16TsOg3UOm5NmvpGtxwit0JEonAxiALj4vJ7hxMBQzd0KObLoafBD9vd8ptq+MVqISzaRSS1JKIn+BCmoRo9kmtZR5yG4DIaacth0Cd+odqukmrV8T0TcE8SSWmNbyFL/weJ8o1dp0xE24AstNWWaQvU407H/UikePfqoEFhazf/bdN7glG691ymXsnk2Xw4npwxH5Pfs37h5ErFJ7iI3MSJzm6ZnJvT8MoWOGpfxJxx+TjqDKM0wYMoytHdHNdkFbTEnqo+Lbpa8k9L6JAMog+SuJiFKbea+gdhJ6PRf0mbTF7S+jea0Bg5yv3oB0Fwj0S5Y/3r4kCqX8x3Os20FIh7YaJeMLpFLkvc8u6u0kueWTFf2pxNpHwCeX0fl0m4xBPAm0LI8LoFHBBNaD02IRy0GwRBMXt3QkBZY4g7TTGjH10BOdh26RBmCHHA48z8Cg/SeQGSDVI6fKXr8s/0jd4gOT80Loz7HLdf6C/aq4E35qsUjO89AoWdEG5iryqnSop5VO7XQAyb84V+jPAcLi0sZ0AbeNMYA4QMUnXJPU/DLtv2y5hM8t4/p0eGFD186YUMMrbknS6OETLqtEDUvPdKhCBLT050SQVemVI"
+            },
+            "hostType": "nuget",
+            "matchHost": "https://nuget.pkg.github.com/CenterEdge/"
+        }
+    ],
+    "packageRules": [
+        {
+            "description": "The rules for private Nuget packages",
+            "major": {
+                "enabled": true
+            },
+            "matchPackageNames": [
+                "@centeredge/ng-camera-capture"
+            ],
+            "registryUrls": ["https://npm.pkg.github.com"]
+        },
+        {
+            "description": "The rules for private Nuget packages",
+            "major": {
+                "enabled": true
+            },
+            "matchPackageNames": [
+                "CenterEdge.Metrics.AspNetCore"
+            ],
+            "registryUrls": [
+                "https://nuget.pkg.github.com/CenterEdge/index.json",
+                "https://api.nuget.org/v3/index.json"
+            ]
+        }
+    ],
+    "npmrc": "@CenterEdge:registry=https://npm.pkg.github.com/"
+}

@@ -3,6 +3,8 @@
         "This preset is used to update private CenterEdge packages from our github package repository",
         "The tokens are generated from https://app.renovatebot.com/encrypt",
         "Include any packages in the matchPackageNames list to trigger Renovate to make pull requests for those packages",
+        "The `token` depends on an authorized github packages token, ghp, to be valid. If that github token expires then the",
+            "Renovate updates to private packages will break",
         "See https://docs.renovatebot.com/getting-started/private-packages/ for more information about private package configuration"
     ],
     "hostRules": [

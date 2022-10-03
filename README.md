@@ -11,8 +11,11 @@ Renovate is a dependency update tool https://github.com/renovatebot/renovate
 ----
 
 - `rangeStrategy` is set to `bump` so minor/patch npm version updates would not be ignored
-- `stabilityDays` is helpful to prevent upgrading to packages that have only been released very recently. Such as npm packages are allowed to be removed from the npm repo within a few days of initial release. If we update a third party npm package and then it's removed from npm entirely that would not be good.
-
+- `stabilityDays` is helpful to prevent upgrading to packages that have only been released very recently. Such as npm packages are allowed to be removed from the npm repo within a few days of initial release. If we update a third party npm package and then it's removed from npm entirely that would not be good
+- When does Renovate update a repository?
+  - When the `schedule` is triggered
+  - When a renovate.json is changed
+  - When the checkbox "Check this box to trigger a request for Renovate to run again on this repository" is checked. This is in the Repisotories "Issues" tab --> Dependency Dashboard. However, the Issues tab isn't present in all repositories
 
 ----
 

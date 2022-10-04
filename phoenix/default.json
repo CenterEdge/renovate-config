@@ -4,7 +4,9 @@
     "branchNameStrict": true,
     "dependencyDashboard": true,
     "extends": [
-      "config:base"
+      "config:base",
+      "github>CenterEdge/renovate-config//phoenix/major",
+      "github>CenterEdge/renovate-config//phoenix/private-packages",
     ],    
     "ignorePaths": [],
     "ignoreUnstable": true,

@@ -10,11 +10,7 @@ Renovate is a dependency update tool https://github.com/renovatebot/renovate
 ```json
 {
   "extends": [
-    "github>CenterEdge/renovate-config//phoenix/default",
-    "github>CenterEdge/renovate-config//phoenix/nuget-minor",
-    "github>CenterEdge/renovate-config//phoenix/npm-minor",
-    "github>CenterEdge/renovate-config//phoenix/major"
-    "github>CenterEdge/renovate-config//phoenix/private-packages"
+    "github>CenterEdge/renovate-config//phoenix/default"
   ],
   "description": "The Renovate configuration presets are in https://github.com/CenterEdge/renovate-config"
 }

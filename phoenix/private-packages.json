@@ -50,7 +50,8 @@
                 "https://nuget.pkg.github.com/CenterEdge/index.json",
                 "https://api.nuget.org/v3/index.json"
             ]
-        }
+        },
+        { "matchPackageNames": ["CenterEdge.Metrics.AspNetCore"], "allowedVersions": "<2.3.0" }
     ],
     "npmrc": "@CenterEdge:registry=https://npm.pkg.github.com/"
 }

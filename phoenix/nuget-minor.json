@@ -1,13 +1,15 @@
 {
-    "description": "This preset is used to combine update patch and minor package updates into one pull request",    
+    "description": "This preset is used to combine third party patch and minor package updates into one pull request",
     "packageRules": [
         {            
             "enabled": true,
             "groupName": "Nuget Minor Packages (TODO JIRA)",
             "matchUpdateTypes": ["patch", "minor"],
             "matchManagers": [ "nuget" ],
-            "stabilityDays": 3
+            "stabilityDays": 5,
+            "excludePackagePrefixes": ["Advantage", "advantage", "CECloud", "cecloud", "CenterEdge", "centeredge", "Phoenix", "phoenix" ],
+            "excludePackageNames": ["Yardarm.Sdk"]
         },
-        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" }        
+        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" }
     ]
 }

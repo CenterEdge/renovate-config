@@ -1,13 +1,33 @@
 {
-    "description": "This preset is used to combine update patch and minor package updates into one pull request",
+    "description": "This preset is used to combine third party patch and minor package updates into one pull request",
     "packageRules": [
         {
             "enabled": true,   
             "groupName": "npm Minor Packages (TODO JIRA)",
             "matchUpdateTypes": ["patch", "minor"],
             "matchManagers": [ "npm" ],
-            "stabilityDays": 3
-        }
+            "stabilityDays": 5,
+            "excludePackagePrefixes": ["Advantage", "advantage", "CECloud", "cecloud", "CenterEdge", "centeredge", "Phoenix", "phoenix" ],
+            "excludePackageNames": [
+                "authorization-typescript-node-client",
+                "camera-capture",
+                "ce-selenium-helpers",
+                "cecloud-mashtub-typescript-node-client",
+                "centeredge-mocker",
+                "client-common-services",
+                "corpsites-typescript-node-client",
+                "mashtub-angular11",
+                "mashtub-typescript-node-client",
+                "mashtub2-typescript-angular-client",
+                "mocks-microservices",
+                "ng-camera-capture",
+                "ng-client-common-services",
+                "openapi-generator-cli",
+                "pdf-typescript-node-client",
+                "syncstatus-typescript-node-client"
+            ]
+        },
+        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" }
     ],
     "rangeStrategy": "bump"
 }

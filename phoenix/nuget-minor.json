@@ -3,7 +3,7 @@
     "packageRules": [
         {            
             "enabled": true,
-            "groupName": "Nuget Minor Packages (TODO JIRA)",
+            "groupName": "Nuget Third Party Minor Packages (TODO JIRA)",
             "matchUpdateTypes": ["patch", "minor"],
             "matchManagers": [ "nuget" ],
             "stabilityDays": 5,

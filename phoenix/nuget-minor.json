@@ -11,8 +11,8 @@
             "excludePackageNames": ["Yardarm.Sdk"]
         },
         { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" },
+        { "matchPackageNames": ["OpenTelemetry.Extensions.Hosting"], "allowedVersions": ">1.0.0-rc9.10" },
         { "matchPackageNames": ["OpenTelemetry.Instrumentation.AspNetCore"], "allowedVersions": ">1.0.0-rc9.10" },
-        { "matchPackageNames": ["OpenTelemetry.Instrumentation.Http"], "allowedVersions": ">1.0.0-rc9.10" },
-        { "matchPackageNames": ["OpenTelemetry.Extensions.Hosting"], "allowedVersions": ">1.0.0-rc9.10" }
+        { "matchPackageNames": ["OpenTelemetry.Instrumentation.Http"], "allowedVersions": ">1.0.0-rc9.10" }
     ]
 }

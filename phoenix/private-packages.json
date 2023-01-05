@@ -29,14 +29,15 @@
     ],
     "packageRules": [
         {
-            "description": "The rules for private Nuget packages",
+            "description": "The rules for private npm packages",
             "major": {
                 "enabled": true
             },
             "matchPackageNames": [
                 "@centeredge/ng-camera-capture"
             ],
-            "registryUrls": ["https://npm.pkg.github.com"]
+            "registryUrls": ["https://npm.pkg.github.com"],
+            "schedule": ["at any time"]
         },
         {
             "description": "The rules for private Nuget packages",
@@ -49,9 +50,11 @@
             "registryUrls": [
                 "https://nuget.pkg.github.com/CenterEdge/index.json",
                 "https://api.nuget.org/v3/index.json"
-            ]
+            ],
+            "schedule": ["at any time"]
         },
-        { "matchPackageNames": ["CenterEdge.Metrics.AspNetCore"], "allowedVersions": "<2.3.0" }
+        { "matchPackageNames": ["CenterEdge.Metrics.AspNetCore"], "allowedVersions": "<2.3.0" },
+        { "matchPackageNames": ["Phoenix.Microservice.Advantage"] }
     ],
     "npmrc": "@CenterEdge:registry=https://npm.pkg.github.com/"
 }

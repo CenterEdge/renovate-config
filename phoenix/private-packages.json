@@ -45,7 +45,8 @@
                 "enabled": true
             },
             "matchPackageNames": [
-                "CenterEdge.Metrics.AspNetCore"
+                "CenterEdge.Metrics.AspNetCore",
+                "Phoenix.Microservice.Advantage"
             ],
             "registryUrls": [
                 "https://nuget.pkg.github.com/CenterEdge/index.json",
@@ -53,8 +54,7 @@
             ],
             "schedule": ["at any time"]
         },
-        { "matchPackageNames": ["CenterEdge.Metrics.AspNetCore"], "allowedVersions": "<2.3.0" },
-        { "matchPackageNames": ["Phoenix.Microservice.Advantage"] }
+        { "matchPackageNames": ["CenterEdge.Metrics.AspNetCore"], "allowedVersions": "<2.3.0" }
     ],
     "npmrc": "@CenterEdge:registry=https://npm.pkg.github.com/"
 }

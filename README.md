@@ -2,7 +2,7 @@
 
 Renovate is a dependency update tool https://github.com/renovatebot/renovate
 
-- List of all currently open PRs created by Renovate [https://github.com/pulls](https://github.com/pulls?q=org%3ACenterEdge+is%3Apr+is%3Aopen+author%3Aapp%2Frenovate+)
+- List of all open pull requets created by Renovate [https://github.com/pulls](https://github.com/pulls?q=org%3ACenterEdge+is%3Apr+is%3Aopen+author%3Aapp%2Frenovate+)
 - Configuration documention: https://docs.renovatebot.com/configuration-options
 - Presets documentation: https://docs.renovatebot.com/config-presets/
 - Run logs: https://app.renovatebot.com/dashboard#github/CenterEdge/

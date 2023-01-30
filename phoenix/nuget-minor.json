@@ -10,11 +10,11 @@
             "excludePackagePrefixes": ["Advantage", "advantage", "CECloud", "cecloud", "CenterEdge", "centeredge", "Phoenix", "phoenix" ],
             "excludePackageNames": ["Yardarm.Sdk"]
         },
-        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" },
+        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" },      
+        { "matchPackageNames": ["NEST"], "allowedVersions": "<=7.8.1" },
+        { "matchPackageNames": ["NEST.JsonNetSerializer"], "allowedVersions": "<=7.8.1" },
         { "matchPackageNames": ["OpenTelemetry.Extensions.Hosting"], "allowedVersions": "<=1.0.0-rc9.9" },
         { "matchPackageNames": ["OpenTelemetry.Instrumentation.AspNetCore"], "allowedVersions": "<=1.0.0-rc9.9" },
-        { "matchPackageNames": ["OpenTelemetry.Instrumentation.Http"], "allowedVersions": "<=1.0.0-rc9.9" },
-        { "matchPackageNames": ["NEST"], "allowedVersions": "<=7.8.1" },
-        { "matchPackageNames": ["NEST.JsonNetSerializer"], "allowedVersions": "<=7.8.1" }
+        { "matchPackageNames": ["OpenTelemetry.Instrumentation.Http"], "allowedVersions": "<=1.0.0-rc9.9" }
     ]
 }

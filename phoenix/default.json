@@ -3,6 +3,10 @@
     "branchPrefixOld": "renovate-",
     "branchNameStrict": true,
     "dependencyDashboard": true,
+        "description": [
+        "Notes:",
+        "- We are ignoring artifactErrors because it was complaining about not being able to find some of our private package, and so blocking merges. However, we already knew that a lot of our packages renovate won't be able to find because we have to manually add each one to a white list. And we couldn't find any other readily availble documentation on what other kind of artifiact errors it could find"
+    ],
     "extends": [
         "config:base",
         "github>CenterEdge/renovate-config//phoenix/major",

@@ -29,5 +29,6 @@
         "- Our Renovate configurations are in https://github.com/CenterEdge/renovate-config"
     ],
     "schedule": ["on Monday"],
+    "suppressNotifications": ["artifactErrors"],
     "timezone": "America/New_York"
 }

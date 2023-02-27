@@ -3,12 +3,16 @@
     "branchPrefixOld": "renovate-",
     "branchNameStrict": true,
     "dependencyDashboard": true,
+        "description": [
+        "Notes:",
+        "- We are ignoring artifactErrors because it was complaining about not being able to find some of our private package, and so blocking merges. However, we already knew that a lot of our packages renovate won't be able to find because we have to manually add each one to a white list. And we couldn't find any other readily available documentation on what other kind of artifact errors it could find"
+    ],
     "extends": [
         "config:base",
         "github>CenterEdge/renovate-config//phoenix/major",
         "github>CenterEdge/renovate-config//phoenix/npm-minor",
         "github>CenterEdge/renovate-config//phoenix/nuget-minor",
-        "github>CenterEdge/renovate-config//phoenix/private-packages",
+        "github>CenterEdge/renovate-config//phoenix/private-packages"
     ],    
     "ignorePaths": [],
     "ignoreUnstable": true,
@@ -29,5 +33,6 @@
         "- Our Renovate configurations are in https://github.com/CenterEdge/renovate-config"
     ],
     "schedule": ["on Monday"],
+    "suppressNotifications": ["artifactErrors"],
     "timezone": "America/New_York"
 }

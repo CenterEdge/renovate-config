@@ -16,6 +16,8 @@
         { "matchPackageNames": ["OpenTelemetry.Exporter.Jaeger"], "allowedVersions": "<=1.3.2" },
         { "matchPackageNames": ["OpenTelemetry.Extensions.Hosting"], "allowedVersions": "<=1.0.0-rc9.9" },
         { "matchPackageNames": ["OpenTelemetry.Instrumentation.AspNetCore"], "allowedVersions": "<=1.0.0-rc9.9" },
-        { "matchPackageNames": ["OpenTelemetry.Instrumentation.Http"], "allowedVersions": "<=1.0.0-rc9.9" }
+        { "matchPackageNames": ["OpenTelemetry.Instrumentation.Http"], "allowedVersions": "<=1.0.0-rc9.9" },
+        { "matchPackageNames": ["swashbuckle.aspnetcore.cli"], "allowedVersions": "<=6.4.0" }
+        
     ]
 }

@@ -45,6 +45,7 @@
                 "enabled": true
             },
             "matchPackageNames": [
+                "CECloud.Messenger",
                 "CenterEdge.Metrics.AspNetCore",
                 "Phoenix.Microservice.Advantage"
             ],

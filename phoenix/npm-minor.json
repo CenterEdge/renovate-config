@@ -27,7 +27,8 @@
                 "syncstatus-typescript-node-client"
             ]
         },
-        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" }
+        { "matchPackageNames": ["Linq2Couchbase"], "allowedVersions": "<=1.4.1" },
+        { "matchPackageNames": ["@types/lodash"], "allowedVersions": "<4.14.194" }
     ],
     "rangeStrategy": "bump"
 }

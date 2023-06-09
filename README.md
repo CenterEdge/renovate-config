@@ -16,6 +16,7 @@ Renovate is a dependency update tool https://github.com/renovatebot/renovate
   "description": "The Renovate configuration presets are in https://github.com/CenterEdge/renovate-config"
 }
 ```
+- See the README in https://github.com/CenterEdge/CenterEdge.GitHub for how jira issues can be automatically created for pull requests created by Renovate
 
 
 ----

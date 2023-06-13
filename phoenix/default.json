@@ -32,7 +32,7 @@
         "- If any single packages aren't passing the [stabilityDays](https://docs.renovatebot.com/configuration-options/#stabilitydays) check then the entire PR containing other packages will not be made (ideally just that one package would be excluded, but this is a limitation of the current system). Search \"stability\" in the [Renovate logs](https://app.renovatebot.com/dashboard#github/CenterEdge/TempPackageManagerConcept) to find which package is being blocked",
         "- Our Renovate configurations are in https://github.com/CenterEdge/renovate-config"
     ],
-    "schedule": ["on Monday"],
+    "schedule": ["before 4am on Monday"],
     "suppressNotifications": ["artifactErrors"],
     "timezone": "America/New_York"
 }

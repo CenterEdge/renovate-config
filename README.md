@@ -6,7 +6,7 @@ Renovate is a dependency update tool https://github.com/renovatebot/renovate
 - Configuration documention: https://docs.renovatebot.com/configuration-options
 - Presets documentation: https://docs.renovatebot.com/config-presets/
 - Run logs: https://app.renovatebot.com/dashboard#github/CenterEdge/
-- See any `renovate.json` in our repos for how to add a new Renovate configuration to a repo. Also repos with newly added renovate configs need to be added to github.com/settings/installations --> Integrations --> Applications --> Renovate Configure --> "Only Select Repositories"
+- See any `renovate.json` in our repos for how to add a new Renovate configuration to a repo
 - In general, the default `renovate.json` for any repo that is added to Renovate to should look something like this:
 ```json
 {
@@ -26,6 +26,7 @@ Renovate is a dependency update tool https://github.com/renovatebot/renovate
 - When does Renovate update a repository?
   - When the `schedule` is triggered
   - When a renovate.json is changed
+  - When the title of a Pull Request authored by Renovate is changed
   - When the checkbox "Check this box to trigger a request for Renovate to run again on this repository" is checked. This is in the Repositories "Issues" tab --> Dependency Dashboard. However, the Issues tab isn't present in all repositories
 
 ----

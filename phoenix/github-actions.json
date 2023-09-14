@@ -3,7 +3,7 @@
     "packageRules": [
         {
             "enabled": true,
-            "groupName": "Github Actions Updates",
+            "groupName": "Github Actions",
             "matchManagers": [ "github-actions" ],
             "stabilityDays": 5
         }

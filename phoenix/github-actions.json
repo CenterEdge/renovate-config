@@ -1,0 +1,11 @@
+{
+    "description": "This preset is used to combine github-actions updates into one pull request",
+    "packageRules": [
+        {
+            "enabled": true,
+            "groupName": "Github Actions Updates",
+            "matchManagers": [ "github-actions" ],
+            "stabilityDays": 5
+        }
+    ]
+}

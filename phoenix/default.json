@@ -13,14 +13,14 @@
         "github>CenterEdge/renovate-config//phoenix/npm-minor",
         "github>CenterEdge/renovate-config//phoenix/nuget-minor",
         "github>CenterEdge/renovate-config//phoenix/private-packages"
-    ],    
+    ],
     "ignorePaths": [],
     "ignoreUnstable": true,
     "packageRules": [
         {
-            "matchManagers": ["dockerfile", "docker-compose", "github-actions", "kustomize"],
-            "enabled": false      
-        }         
+            "matchManagers": ["dockerfile", "docker-compose", "kustomize"],
+            "enabled": false
+        }
     ],
     "prBodyNotes": [
         "@CenterEdge engineers:",

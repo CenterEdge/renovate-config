@@ -4,7 +4,7 @@
         {
             "enabled": true,
             "groupName": "Github Actions",
-            "matchUpdateTypes": ["major", "minor", "patch"]
+            "matchUpdateTypes": ["major", "minor", "patch"],
             "matchManagers": [ "github-actions" ],
             "stabilityDays": 5
         }

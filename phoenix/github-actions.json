@@ -4,8 +4,10 @@
         {
             "enabled": true,
             "groupName": "Github Actions",
-            "matchUpdateTypes": ["major", "minor", "patch"],
+            "groupSlug": "github-actions",
             "matchManagers": [ "github-actions" ],
+            "separateMajorMinor": "false",
+            "separateMinorPatch": "false",
             "stabilityDays": 5
         }
     ]

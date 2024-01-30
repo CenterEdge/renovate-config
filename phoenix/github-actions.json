@@ -9,6 +9,11 @@
             "separateMajorMinor": "false",
             "separateMinorPatch": "false",
             "stabilityDays": 5
+        },
+        {
+            "matchPackagePrefixes": ["centeredge/cd-actions", "centeredge/ci-actions"],
+            "matchManagers": [ "github-actions" ],
+            "stabilityDays": 0
         }
     ]
 }
